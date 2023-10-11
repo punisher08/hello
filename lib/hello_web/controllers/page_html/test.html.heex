@@ -1,0 +1,10 @@
+<.flash_group flash={@flash} />
+<ul>
+<%= for product <- @products do %>
+    <li>
+      <%= product.name %>
+      <%= product.description %>
+      <%= product.price %>
+    </li>
+<% end %>
+</ul>
